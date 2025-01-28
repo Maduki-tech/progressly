@@ -15,6 +15,7 @@ import Link from "next/link";
 import MenuItem from "./MenuItem";
 import { SettingsIcon } from "lucide-react";
 import { ThemeToggle } from "../ui/themeToggle";
+import Settings from "@/app/_components/settings";
 
 export function AppSidebar() {
     return (
@@ -38,10 +39,13 @@ export function AppSidebar() {
                 <SidebarMenu>
                     <SidebarMenuItem>
                         <SidebarMenuButton asChild>
-                            <Link href={"#"}>
+                            {/* <Link href={"#"}> */}
+                            {/*     <span>Settings</span> */}
+                            {/* </Link> */}
+                            <div>
                                 <SettingsIcon />
-                                <span>Settings</span>
-                            </Link>
+                                <Settings />
+                            </div>
                         </SidebarMenuButton>
                     </SidebarMenuItem>
                 </SidebarMenu>
