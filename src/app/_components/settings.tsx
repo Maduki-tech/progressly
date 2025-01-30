@@ -1,27 +1,23 @@
 import {
     Dialog,
     DialogContent,
-    DialogDescription,
     DialogHeader,
     DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog";
 
 import React from "react";
+import { SettingsForm } from "./settingsForm";
 
 export default function Settings() {
     return (
         <Dialog>
-            <DialogTrigger>Settings</DialogTrigger>
+            <DialogTrigger className="w-full text-left">Settings</DialogTrigger>
             <DialogContent>
                 <DialogHeader>
-                    <DialogTitle>Are you absolutely sure?</DialogTitle>
-                    <DialogDescription>
-                        This action cannot be undone. This will permanently
-                        delete your account and remove your data from our
-                        servers.
-                    </DialogDescription>
+                    <DialogTitle>Settings</DialogTitle>
                 </DialogHeader>
+                <SettingsForm/>
             </DialogContent>
         </Dialog>
     );

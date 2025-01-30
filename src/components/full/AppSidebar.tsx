@@ -11,7 +11,6 @@ import {
     SidebarMenuItem,
     SidebarTrigger,
 } from "../ui/sidebar";
-import Link from "next/link";
 import MenuItem from "./MenuItem";
 import { SettingsIcon } from "lucide-react";
 import { ThemeToggle } from "../ui/themeToggle";
@@ -29,19 +28,11 @@ export function AppSidebar() {
                         </SidebarMenu>
                     </SidebarGroupContent>
                 </SidebarGroup>
-                <SidebarGroup>
-                    <SidebarGroupContent>
-                        <ThemeToggle />
-                    </SidebarGroupContent>
-                </SidebarGroup>
             </SidebarContent>
             <SidebarFooter>
                 <SidebarMenu>
                     <SidebarMenuItem>
                         <SidebarMenuButton asChild>
-                            {/* <Link href={"#"}> */}
-                            {/*     <span>Settings</span> */}
-                            {/* </Link> */}
                             <div>
                                 <SettingsIcon />
                                 <Settings />
