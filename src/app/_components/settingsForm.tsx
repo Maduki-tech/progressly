@@ -41,9 +41,7 @@ export function SettingsForm() {
                 className="w-full space-y-6"
             >
                 <div>
-                    <h3 className="mb-4 text-lg font-medium">
-                        Email Notifications
-                    </h3>
+                    <h3 className="mb-4 text-lg font-medium">Appeareance</h3>
                     <div className="space-y-4">
                         <FormField
                             control={form.control}
