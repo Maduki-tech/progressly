@@ -20,7 +20,15 @@ export default function KanbanColumn({
     });
 
     return (
-        <Card className="flex w-72 flex-col">
+        <Card
+            className={`flex w-72 flex-col ${
+                column.title === "To Do"
+                    ? "bg-gray-300/50"
+                    : column.title === "In Progress"
+                      ? "bg-sky-300/50"
+                      : "bg-lime-300/50"
+            } `}
+        >
             <CardHeader>
                 <CardTitle className="text-sm font-medium">
                     {column.title} ({tasks.length})

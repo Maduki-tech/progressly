@@ -13,7 +13,6 @@ import {
 } from "../ui/sidebar";
 import MenuItem from "./MenuItem";
 import { SettingsIcon } from "lucide-react";
-import { ThemeToggle } from "../ui/themeToggle";
 import Settings from "@/app/_components/settings";
 
 export function AppSidebar() {
